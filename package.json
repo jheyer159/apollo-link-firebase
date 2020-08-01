@@ -1,5 +1,5 @@
 {
-  "name": "@fugood/apollo-link-firebase",
+  "name": "@jheyer159/apollo-link-firebase",
   "version": "1.1.1",
   "description": "Query Firebase in GraphQL with Apollo",
   "author": {
@@ -27,7 +27,6 @@
     "prebuild": "npm run clean",
     "build": "tsc -p ./tsconfig.release.json --pretty",
     "postbuild": "npm run bundle",
-    "prepublishOnly": "npm run clean && npm run build",
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --mode development"
   },
   "devDependencies": {
@@ -71,7 +70,10 @@
     "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
   },
-  "repository": "Canner/apollo-link-firebase",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jheyer159/apollo-link-firebase"
+  },
   "license": "MIT",
   "peerDependencies": {
     "firebase": ">= 4"
